@@ -1,6 +1,27 @@
 ﻿@model IEnumerable<Product>
 
 <h2>Shop</h2>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>ClientApp</title>
+	<base href="/">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link href="~/scripts/styles.css" rel="stylesheet" />
+</head>
+<body>
+	<app-root></app-root>
+
+	<script src="~/scripts/runtime.js"></script>
+	<script src="~/scripts/polyfills.js"></script>
+	<script src="~/scripts/vendor.js"></script>
+	<script src="~/scripts/main.js"></script>
+</body>
+</html>
+
+
 @*<p>Count: @Model.Count()</p>*@
 
 
@@ -28,22 +49,3 @@
 			</div>
 		</div>
 	}*@
-
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>ClientApp</title>
-	<base href="/">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	<link href="~/scripts/styles.css" rel="stylesheet" />
-</head>
-<body>
-	<app-root></app-root>
-	<script src="~/scripts/runtime.js"></script>
-	<script src="~/scripts/polyfills.js"></script>
-	<script src="~/scripts/vendor.js"></script>
-	<script src="~/scripts/main.js"></script>
-</body>
-</html>

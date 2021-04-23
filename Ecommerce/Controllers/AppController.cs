@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -52,8 +52,10 @@ namespace Ecommerce.Controllers
 		[Authorize]
 		public IActionResult Shop()
 		{
-			var result = _repository.GetAllProducts();
-			return View(result);
+
+			return View();
+			//var result = _repository.GetAllProducts();
+			//return View(result);
 		}
 	}
 }

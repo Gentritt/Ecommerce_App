@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Product>
+
+<h1>Shop</h1>
+@*<p>Count: @Model.Count()</p>*@
+
+
+
+@*<script src="~/ts/storeuser.js"></script>
+	<script src="~/ts/main.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link href="~/css/site1.css" rel="stylesheet" />
+
+	@foreach (var item in Model)
+	{
+		<div class="col-md-3">
+			<div class="well well-sm">
+				<img src="~/images/@(item.ArtId).jpg" class="img-responsive" />
+				<h3>@item.Category - @item.Size</h3>
+				<ul class="product-props">
+					<li>Price: @item.Price</li>
+					<li>Artist: @item.Artist</li>
+					<li>Title: @item.Title</li>
+					<li>Description: @item.ArtDescription</li>
+				</ul>
+				<button class="btn btn-pr" id="buyButton">Buy</button>
+			</div>
+		</div>
+	}*@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>ClientApp</title>
+	<base href="/">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link href="~/scripts/styles.css" rel="stylesheet" />
+</head>
+<body>
+	<app-root></app-root>
+	<script src="~/scripts/runtime.js"></script>
+	<script src="~/scripts/polyfills.js"></script>
+	<script src="~/scripts/vendor.js"></script>
+	<script src="~/scripts/main.js"></script>
+</body>
+</html>

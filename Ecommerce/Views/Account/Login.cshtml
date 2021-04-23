@@ -1,0 +1,38 @@
+﻿@model LoginViewModel
+
+@{
+	ViewBag.Title = "Login";
+}
+
+
+@section scripts{
+	<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+	<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
+<link href="~/css/error.css" rel="stylesheet" />
+
+
+<div class="row">
+	<div class="col-md-4">
+		<form method="post">
+			<div>@Html.ValidationSummary(true,"Errors",new {@class = "text-danger" })</div>
+			<div class="form-group">
+				@Html.LabelFor(m => m.Username)
+				@Html.TextBoxFor(m => m.Username, new { @class = "form-control"})
+				@Html.ValidationMessageFor(m => m.Username)
+			</div>
+			<div class="form-group">
+				@Html.LabelFor(m => m.Password)
+				@Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+				@Html.ValidationMessageFor(m => m.Password)
+			</div>
+			<div class="form-group">
+				@Html.LabelFor(m=> m.RemberMe)
+				@Html.CheckBoxFor(m=> m.RemberMe, new { @class = "checkbox-inline" })
+			</div>
+			<div class="form-group">
+				<button type="submit" value="Login" class="btn btn-success">Login</button>
+			</div>
+		</form>
+	</div>
+</div>

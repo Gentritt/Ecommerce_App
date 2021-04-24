@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -11,7 +12,8 @@ import { ProductList } from './shop/ProductList.component';
         ProductList
   ],
   imports: [
-    BrowserModule
+      BrowserModule,
+      HttpClientModule
   ],
     providers: [
         DataService

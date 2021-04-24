@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { DataService } from './shared/dataService';
+import { Cart } from './shop/cart.component';
 import { ProductList } from './shop/ProductList.component';
 
 @NgModule({
   declarations: [
         AppComponent,
-        ProductList
+        ProductList,
+        Cart
   ],
   imports: [
       BrowserModule,

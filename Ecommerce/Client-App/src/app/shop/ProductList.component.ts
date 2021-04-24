@@ -4,7 +4,7 @@ import { Product } from "../shared/Product";
 @Component({
 	selector: "product-list",
 	templateUrl: "./ProductList.component.html",
-	styleUrls: []
+	styleUrls: ["ProductList.css"]
 })
 export class ProductList implements OnInit {
 

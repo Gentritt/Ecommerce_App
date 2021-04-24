@@ -1,24 +1,31 @@
 ﻿
-	<style>
-		.responsive {
-			width: 40;
-			height: auto;
-		}
-	</style>
+<style>
+	.responsive {
+		width: 40;
+		height: auto;
+	}
+</style>
+<link rel="stylesheet"
+	  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+</script>
 
+<div class="row">
 
-	<div class="row">
+	<div class="product-info col-md-4 well well-sm" *ngFor="let p of Products">
+		<img src="/scripts/assets/images/{{p.artId}}.jpg" class="img-thumbnail" alt="{{p.title}}">
+		<div class="product-name">{{p.category}} - {{p.size}}</div>
+		<div><strong>Price</strong>: {{p.price | currency}}</div>
+		<div><strong>Artist:</strong> {{p.artist}}</div>
+		<div><strong>Title:</strong>{{p.title}}</div>
+		<div><strong>Description:</strong>{{p.artDescription}}</div>
+		<button class="btn btn-success btn-sm pull-right" id="buyButton">Buy</button>
 
-		<div class="product-info col-md-4" *ngFor="let p of Products">
-			<img src="/scripts/assets/images/{{p.artId}}.jpg" class="img-thumbnail" alt="{{p.title}}">
-			<h3>{{p.category}} - {{p.size}}</h3>
-			<div>Price: {{p.price | currency}}</div>
-			<div>Artist: {{p.artist}}</div>
-			<div>Title:{{p.title}}</div>
-			<div>Description:{{p.artDescription}}</div>
-			<button class="btn btn-success btn-sm pull-right" id="buyButton">Buy</button>
-		</div>
 	</div>
+
+</div>
 
 
 

@@ -21,7 +21,11 @@ export class ProductList implements OnInit {
 					this.Products = this.data.Products;
 				}
 			})
-    }
+	}
+
+	addProduct(product: Product) {
+		this.data.AddToOrder(product);
+	}
 
 	
 }

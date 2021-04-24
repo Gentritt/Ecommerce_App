@@ -1,9 +1,11 @@
 import { __decorate } from "tslib";
 import { Injectable } from "@angular/core";
 import { map } from "rxjs/operators";
+import * as orders from "./order";
 let DataService = class DataService {
     constructor(http) {
         this.http = http;
+        this.order = new orders.Order();
         this.Products = [];
     }
     loadProducts() {
@@ -12,6 +14,19 @@ let DataService = class DataService {
             this.Products = data;
             return true;
         }));
+    }
+    AddToOrder(product) {
+        let item;
+        item = new orders.OrderItem();
+        item.productId = product.id;
+        item.productArtist = product.artist;
+        item.productCategory = product.category;
+        item.productArtId = product.artId;
+        item.productTitle = product.title;
+        item.productSize = product.size;
+        item.unitPrice = product.price;
+        item.quantity = 1;
+        this.order.items.push(item);
     }
 };
 DataService = __decorate([

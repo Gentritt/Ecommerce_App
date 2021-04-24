@@ -18,7 +18,7 @@ ProductList = __decorate([
     Component({
         selector: "product-list",
         templateUrl: "./ProductList.component.html",
-        styleUrls: []
+        styleUrls: ["ProductList.css"]
     })
 ], ProductList);
 export { ProductList };

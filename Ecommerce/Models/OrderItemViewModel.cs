@@ -11,14 +11,14 @@ namespace Ecommerce.Models
 		public int Quantity { get; set; }
 		[Required]
 		public decimal UnitPrice { get; set; }
-		public ProductViewModel product { get; set; }
-		//[Required]
-		//public int ProductId { get; set; }
+		//public  product { get; set; }
+		[Required]
+		public int ProductId { get; set; }
 
-		//public string ProductCategory { get; set; }
-		//public string ProductSize { get; set; }
-		//public string ProductTitle { get; set; }
-		//public string ProductArtist { get; set; }
-		//public string ProductArtId { get; set; }
+		public string ProductCategory { get; set; }
+		public string ProductSize { get; set; }
+		public string ProductTitle { get; set; }
+		public string ProductArtist { get; set; }
+		public string ProductArtId { get; set; }
 	}
 }

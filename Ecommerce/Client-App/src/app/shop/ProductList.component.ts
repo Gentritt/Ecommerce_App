@@ -1,13 +1,16 @@
 ﻿import { Component, OnInit } from "@angular/core";
 import { DataService } from "../shared/dataService";
-
+import { Product } from "../shared/Product";
 @Component({
 	selector: "product-list",
 	templateUrl: "./ProductList.component.html",
 	styleUrls: []
 })
 export class ProductList implements OnInit {
-	constructor(private data: DataService) {
+
+	public Products : Product[] = [];
+
+	constructor(private data: DataService) {	
 	}
 
 
@@ -20,5 +23,5 @@ export class ProductList implements OnInit {
 			})
     }
 
-	public Products = [] as any;
+	
 }

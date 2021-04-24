@@ -1,8 +1,24 @@
 ﻿
-<div class="row">
-	<ul>
-		<li *ngFor="let p of Products">
-			{{p.title}}: {{p.price | currency}}
-		</li>
-	</ul>
-</div>
+	<style>
+		.responsive {
+			width: 40;
+			height: auto;
+		}
+	</style>
+
+
+	<div class="row">
+
+		<div class="product-info col-md-4" *ngFor="let p of Products">
+			<img src="/scripts/assets/images/{{p.artId}}.jpg" class="img-thumbnail" alt="{{p.title}}">
+			<h3>{{p.category}} - {{p.size}}</h3>
+			<div>Price: {{p.price | currency}}</div>
+			<div>Artist: {{p.artist}}</div>
+			<div>Title:{{p.title}}</div>
+			<div>Description:{{p.artDescription}}</div>
+			<button class="btn btn-success btn-sm pull-right" id="buyButton">Buy</button>
+		</div>
+	</div>
+
+
+

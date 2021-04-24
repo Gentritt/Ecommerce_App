@@ -5,6 +5,49 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="Client-App\src\images\SK-A-1595.jpg" />
+    <Content Include="Client-App\src\images\SK-A-1935.jpg" />
+    <Content Include="Client-App\src\images\SK-A-2344.jpg" />
+    <Content Include="Client-App\src\images\SK-A-2351.jpg" />
+    <Content Include="Client-App\src\images\SK-A-2391.jpg" />
+    <Content Include="Client-App\src\images\SK-A-2860.jpg" />
+    <Content Include="Client-App\src\images\SK-A-3066.jpg" />
+    <Content Include="Client-App\src\images\SK-A-3137.jpg" />
+    <Content Include="Client-App\src\images\SK-A-3138.jpg" />
+    <Content Include="Client-App\src\images\SK-A-3262.jpg" />
+    <Content Include="Client-App\src\images\SK-A-3276.jpg" />
+    <Content Include="Client-App\src\images\SK-A-3298.jpg" />
+    <Content Include="Client-App\src\images\SK-A-3307.jpg" />
+    <Content Include="Client-App\src\images\SK-A-3340.jpg" />
+    <Content Include="Client-App\src\images\SK-A-3341.jpg" />
+    <Content Include="Client-App\src\images\SK-A-3477.jpg" />
+    <Content Include="Client-App\src\images\SK-A-358.jpg" />
+    <Content Include="Client-App\src\images\SK-A-3934.jpg" />
+    <Content Include="Client-App\src\images\SK-A-3981.jpg" />
+    <Content Include="Client-App\src\images\SK-A-3982.jpg" />
+    <Content Include="Client-App\src\images\SK-A-4019.jpg" />
+    <Content Include="Client-App\src\images\SK-A-4050.jpg" />
+    <Content Include="Client-App\src\images\SK-A-4057.jpg" />
+    <Content Include="Client-App\src\images\SK-A-4096.jpg" />
+    <Content Include="Client-App\src\images\SK-A-4119.jpg" />
+    <Content Include="Client-App\src\images\SK-A-4674.jpg" />
+    <Content Include="Client-App\src\images\SK-A-4691.jpg" />
+    <Content Include="Client-App\src\images\SK-A-4717.jpg" />
+    <Content Include="Client-App\src\images\SK-A-4833.jpg" />
+    <Content Include="Client-App\src\images\SK-A-4885.jpg" />
+    <Content Include="Client-App\src\images\SK-A-5033.jpg" />
+    <Content Include="Client-App\src\images\SK-A-91.jpg" />
+    <Content Include="Client-App\src\images\SK-C-1747.jpg" />
+    <Content Include="Client-App\src\images\SK-C-1768.jpg" />
+    <Content Include="Client-App\src\images\SK-C-216.jpg" />
+    <Content Include="Client-App\src\images\SK-C-251.jpg" />
+    <Content Include="Client-App\src\images\SK-C-5.jpg" />
+    <Content Include="Client-App\src\images\SK-C-597.jpg" />
+    <Content Include="Client-App\src\images\SK-C-6.jpg" />
+    <Content Include="Client-App\src\images\VanGogh.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
     <PackageReference Include="bootstrap" Version="4.6.0" />

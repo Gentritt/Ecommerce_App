@@ -1,4 +1,6 @@
-﻿export class OrderItem {
+﻿import * as _ from "lodash-es";
+
+export class OrderItem {
     id!: number;
     quantity!: number;
     unitPrice!: number;
@@ -10,9 +12,15 @@
     productArtId!: string;
 }
 
+
+
 export class Order {
     orderId!: number;
     orderDate: Date = new Date();
     orderNumber!: string;
     items: Array<OrderItem> = new Array<OrderItem>();
-}1
+    get subtotal(): number {
+        return _.sum(_.map(this.items, i => i.unitPrice * i.quantity));
+
+    };
+}
